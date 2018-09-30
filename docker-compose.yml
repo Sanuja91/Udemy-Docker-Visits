@@ -1,0 +1,13 @@
+# Which version of docker-compose to use
+version:  '3'
+
+# Which services (images with tags) to create
+services:
+  redis-server:
+    image:  'redis'
+  node-app:
+    # Look in the currnet directory for a Dockerfile and build the image
+    build:  .
+    ports:
+      # - is how we specify an array in a yml file
+      - "4001:8081"
