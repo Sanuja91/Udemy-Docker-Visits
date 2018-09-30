@@ -2,6 +2,8 @@
 version:  '3'
 
 # Which services (images with tags) to create
+# Docker compose by default creates a networking layer allowing the 
+# containers to communicate between one another
 services:
   redis-server:
     image:  'redis'
