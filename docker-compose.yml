@@ -8,6 +8,7 @@ services:
   redis-server:
     image:  'redis'
   node-app:
+    restart: always
     # Look in the currnet directory for a Dockerfile and build the image
     build:  .
     ports:
