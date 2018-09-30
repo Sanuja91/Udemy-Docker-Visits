@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
         client.set('visits', parseInt(visits) + 1)
     })
 
-    app.listen(8081, () => {
-        console.log('Listening on port 8081')
-    })
+})
+
+app.listen(8081, () => {
+    console.log('Listening on port 8081')
 })
